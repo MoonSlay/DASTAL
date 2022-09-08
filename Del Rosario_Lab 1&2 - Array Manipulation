@@ -1,0 +1,37 @@
+arr = x = [2, 5, 13, 17, 3, 89, 3, 5, 2, 90, 5, 65]
+n = len(arr)
+print (arr)
+
+def countOccurrences(arr, n, x):
+    res = 0
+    for i in range(n):
+        if x == arr[i]:
+            res += 1
+    return res
+
+o = input("n=")
+input("arr=")
+print (countOccurrences(x, n, int(o)))
+
+j = input("Enter numbers to insert in array: ")
+arr.append(int(j))
+
+u = input("Enter numbers to remove from array: ")
+k = input("Enter numbers to remove from array: ")
+l = input("Enter numbers to remove from array: ")
+arr.remove(int(u))
+arr.remove(int(k))
+arr.remove(int(l))
+
+print("The new array is:")
+print(arr)
+def _sum(arr):
+    sum = 0
+    for i in arr:
+        sum = sum + i
+
+    return (sum)
+
+ans = _sum(arr)
+
+print('Sum of the new array is = ', ans)
